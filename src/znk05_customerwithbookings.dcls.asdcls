@@ -1,0 +1,10 @@
+@EndUserText.label: 'Customer with Bookings'
+@MappingRole: true
+define role ZNK05_CUSTOMERWITHBOOKINGS {
+  grant 
+    select
+      on
+        ZNK05_CUSTOMERWITHBOOKINGS
+          where
+            City = 'Berlin' and (_Bookings.carrier_id = 'LH' or _Bookings.carrier_id = 'UA');             
+}

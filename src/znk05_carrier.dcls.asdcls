@@ -1,0 +1,10 @@
+@EndUserText.label: 'Carrier'
+@MappingRole: true
+define role ZNK05_CARRIER {
+  grant 
+    select
+      on
+        ZNK05_CARRIER
+          where CarrierID > 'AA' and CarrierId < 'TT';
+            
+}

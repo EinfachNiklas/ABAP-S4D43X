@@ -1,0 +1,8 @@
+@EndUserText.label: 'Carrier02'
+@MappingRole: true
+define role ZNK05_CARRIER02 {
+  grant select on ZNK05_CARRIER02
+    where
+      inheriting conditions from entity ZNK05_CARRIER;
+            
+}
